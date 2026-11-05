@@ -11,8 +11,8 @@ resources:
 # Nao altere o formato delas: o pipeline as localiza por padrao de texto.
 images:
   - name: luz-bairro
-    newName: image-registry.openshift-image-registry.svc:5000/fernandacoimbra-dev/luz-bairro
-    digest: sha256:b8c2e9378c31455b58bc6cd6e9aaaa1e34399b7cfdfaa9f113de9395a0e70ffb
+    newName: image-registry.openshift-image-registry.svc:5000/cicd-dev-fernanda-machado/luz-bairro
+    digest: sha256:a01abfde75ff2912dc4725161e4eba6701bd726afde19e6074244d5a4f6aaeda
 
 configMapGenerator:
   - name: luz-bairro-config
