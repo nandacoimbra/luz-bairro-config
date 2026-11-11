@@ -12,7 +12,7 @@ resources:
 images:
   - name: luz-bairro
     newName: image-registry.openshift-image-registry.svc:5000/cicd-dev-fernanda-machado/luz-bairro
-    digest: sha256:a01abfde75ff2912dc4725161e4eba6701bd726afde19e6074244d5a4f6aaeda
+    digest: sha256:4e7fb3479854a517b2168fe3e50b837f2928e32520aafa3221d23db5b92a2a90
 
 configMapGenerator:
   - name: luz-bairro-config
