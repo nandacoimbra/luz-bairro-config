@@ -2,8 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 # TODO(aluno): troque cicd-prod pelo seu projeto de producao ($PROD_NS).
+<<<<<<< HEAD
 namespace: cicd-prod-fernanda-machado
 
+=======
+namespace: cicd-prod
+>>>>>>> parent of 5675b0b (fix: namespace)
 
 resources:
   - ../../base
@@ -14,8 +18,13 @@ resources:
 # porque e la que o pipeline publica a imagem.
 images:
   - name: luz-bairro
+<<<<<<< HEAD
     newName: image-registry.openshift-image-registry.svc:5000/cicd-dev-fernanda-machado/luz-bairro
     digest: sha256:8a556685a123eb756197e1a3e0b4e07e094f7df659e24755f842e30869b900d2
+=======
+    newName: image-registry.openshift-image-registry.svc:5000/cicd-dev/luz-bairro
+    digest: sha256:0000000000000000000000000000000000000000000000000000000000000000
+>>>>>>> parent of 5675b0b (fix: namespace)
 
 configMapGenerator:
   - name: luz-bairro-config
